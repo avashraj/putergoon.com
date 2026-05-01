@@ -31,6 +31,20 @@
     {{ else }}
       <p>No blog posts yet.</p>
     {{ end }}
+  {{ else if eq .Section "create" }}
+    {{ $items := where .RegularPages "Section" "create" }}
+    <section class="create-list">
+      {{ if gt (len $items) 0 }}
+        {{ range $items.ByDate.Reverse }}
+          <article>
+            <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+            {{ .Content }}
+          </article>
+        {{ end }}
+      {{ else }}
+        <p>No creative posts yet.</p>
+      {{ end }}
+    </section>
   {{ else }}
     {{ if gt (len .RegularPages) 0 }}
       <ul>

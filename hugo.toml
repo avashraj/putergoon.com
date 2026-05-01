@@ -1,3 +1,8 @@
 baseURL = 'https://putergoon.com/'
 locale = 'en-us'
 title = 'putergoon.com'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

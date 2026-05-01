@@ -13,7 +13,7 @@ currently I'm:
 
 but I'm also:
 
-- working on a startup
+- working on a [startup](https://focasa.xyz/)
 - building a backtesting engine for algorithmic sports betting
 - making clothes, rock climbing, and skating
 
