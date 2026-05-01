@@ -1,57 +1,43 @@
-{{ define "main" }}
-  {{ if and (ne .Section "notes") (ne .Section "blogs") (ne .Section "create") (ne .Section "store") }}
-    <h1>{{ .Title }}</h1>
-  {{ end }}
-  {{ if .Content }}
-    {{ .Content }}
-  {{ end }}
-
-  {{ if eq .Section "notes" }}
-    {{ $notes := where .RegularPages "Section" "notes" }}
-    <section class="notes-list">
-      {{ if gt (len $notes) 0 }}
-        {{ range $notes.ByDate.Reverse }}
-          <article>
-            <small>{{ .Date.Format "Jan 2, 2006" }}</small>
-            {{ .Content }}
-          </article>
-        {{ end }}
-      {{ else }}
-        <p>No notes yet.</p>
-      {{ end }}
-    </section>
-  {{ else if eq .Section "blogs" }}
-    {{ $posts := where .RegularPages "Section" "blogs" }}
-    {{ if gt (len $posts) 0 }}
-      <div class="blogs-list">
-        {{ range $posts.ByDate.Reverse }}
-          <a class="blog-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
-      </div>
-    {{ else }}
-      <p>No blog posts yet.</p>
+{{ define "main" }} {{ if and (ne .Section "notes") (ne .Section "blogs") (ne
+.Section "create") (ne .Section "store") }}
+<h1>{{ .Title }}</h1>
+{{ end }} {{ if .Content }} {{ .Content }} {{ end }} {{ if eq .Section "notes"
+}} {{ $notes := where .RegularPages "Section" "notes" }}
+<section class="notes-list">
+    {{ if gt (len $notes) 0 }} {{ range $notes.ByDate.Reverse }}
+    <article>
+        <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+        {{ .Content }}
+    </article>
+    {{ end }} {{ else }}
+    <p>No notes yet.</p>
     {{ end }}
-  {{ else if eq .Section "create" }}
-    {{ $items := where .RegularPages "Section" "create" }}
-    <section class="create-list">
-      {{ if gt (len $items) 0 }}
-        {{ range $items.ByDate.Reverse }}
-          <article>
-            <small>{{ .Date.Format "Jan 2, 2006" }}</small>
-            {{ .Content }}
-          </article>
-        {{ end }}
-      {{ else }}
-        <p>No creative posts yet.</p>
-      {{ end }}
-    </section>
-  {{ else }}
-    {{ if gt (len .RegularPages) 0 }}
-      <ul>
-        {{ range .RegularPages.ByDate.Reverse }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
+</section>
+{{ else if eq .Section "blogs" }} {{ $posts := where .RegularPages "Section"
+"blogs" }} {{ if gt (len $posts) 0 }}
+<div class="blogs-list">
+    {{ range $posts.ByDate.Reverse }}
+    <a class="blog-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ end }}
-  {{ end }}
-{{ end }}
+</div>
+{{ else }}
+<p>Coming soonish ...</p>
+{{ end }} {{ else if eq .Section "create" }} {{ $items := where .RegularPages
+"Section" "create" }}
+<section class="create-list">
+    {{ if gt (len $items) 0 }} {{ range $items.ByDate.Reverse }}
+    <article>
+        <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+        {{ .Content }}
+    </article>
+    {{ end }} {{ else }}
+    <p>No creative posts yet.</p>
+    {{ end }}
+</section>
+{{ else }} {{ if gt (len .RegularPages) 0 }}
+<ul>
+    {{ range .RegularPages.ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+{{ end }} {{ end }} {{ end }}
