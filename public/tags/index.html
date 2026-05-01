@@ -80,13 +80,31 @@
 
     .notes-list {
       width: 75%;
-      margin-left: auto;
+      margin-left: 0;
       margin-right: auto;
     }
 
     .notes-list article {
       padding: 12px 0;
       border-bottom: 1px solid #ddd;
+    }
+
+    .blogs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .blog-link {
+      font-family: "Alike Angular", serif;
+      color: #111;
+      text-decoration: none;
+      text-transform: lowercase;
+      width: fit-content;
+    }
+
+    .blog-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -95,8 +113,8 @@
     <header class="topbar">
       <a class="site-title" href="/">putergoon.com</a>
       <nav class="menu">
-        <a href="/blogs/">blogs</a>
         <a href="/notes/">notes</a>
+        <a href="/blogs/">blogs</a>
         <a href="/create/">create</a>
         <a href="/store/">store</a>
       </nav>
