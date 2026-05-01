@@ -2,4 +2,4 @@
 title = "Notes"
 +++
 
-#### My takes under 200 characters:
+#### Takes under 200 characters:
