@@ -13,7 +13,7 @@
       <link>http://localhost:1313/create/walkv0/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/create/walkv0/</guid>
-      <description>&lt;video controls preload=&#34;metadata&#34; playsinline&gt;&#xA;  &lt;source src=&#34;https://media.putergoon.com/create/walkv0/final.mp4&#34;&gt;&#xA;&lt;/video&gt;</description>
+      <description>&lt;video controls preload=&#34;metadata&#34; playsinline poster=&#34;https://media.putergoon.com/create/walkv0/final-poster.jpg&#34;&gt;&#xA;  &lt;source src=&#34;https://media.putergoon.com/create/walkv0/final.mp4#t=0.001&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;</description>
     </item>
   </channel>
 </rss>

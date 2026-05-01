@@ -2,4 +2,4 @@
 title = "Blogs"
 +++
 
-Longer ideas in writing
+#### Longer ideas in writing:

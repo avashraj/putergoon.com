@@ -2,6 +2,6 @@
 title = "Store"
 +++
 
-I want to sell the clothes I make
+#### I want to sell the clothes I make
 
-coming soonish ...
+#### coming soonish ...
