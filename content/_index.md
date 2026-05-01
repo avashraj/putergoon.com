@@ -4,15 +4,17 @@ title = "Home"
 
 # heyyy im avash aka putergoon
 
-im a third year computer science student taking:
+im a software engineer and a recent computer science grad
 
-- operating systems
-- computer vision
-- fullstack development
-- circuit theory
+currently I'm:
 
-## currently I am
+- applying to j\*bs
+- preparing for \*nterviews
 
-- working on my SAPHIRE
-- building a tool for professors to make skill based groups for technical projects
-- maintaining the i2g website for my school
+but I'm also:
+
+- working on a startup
+- building a backtesting engine for algorithmic sports betting
+- making clothes, rock climbing, and skating
+
+I write here sometimes. Feel free to reach out at avashraj328@gmail.com

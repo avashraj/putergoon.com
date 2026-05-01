@@ -5,10 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Categories | putergoon.com</title>
   <style>
+    @font-face {
+      font-family: "Alike Angular";
+      src: url("/fonts/Alike_Angular/AlikeAngular-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Geom";
+      src: url("/fonts/Geom/Geom-VariableFont_wght.ttf") format("truetype");
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Geom";
+      src: url("/fonts/Geom/Geom-Italic-VariableFont_wght.ttf") format("truetype");
+      font-weight: 100 900;
+      font-style: italic;
+      font-display: swap;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Geom", Arial, sans-serif;
       line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Alike Angular", serif;
+      font-weight: 400;
     }
 
     .page {
@@ -25,8 +54,9 @@
     }
 
     .site-title {
+      font-family: "Alike Angular", serif;
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 400;
       text-decoration: none;
       color: #111;
     }
@@ -37,14 +67,21 @@
     }
 
     .menu a {
+      font-family: "Alike Angular", serif;
       color: #111;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 400;
       text-transform: lowercase;
     }
 
     .menu a:hover {
       text-decoration: underline;
+    }
+
+    .notes-list {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .notes-list article {
@@ -60,6 +97,7 @@
       <nav class="menu">
         <a href="/blogs/">blogs</a>
         <a href="/notes/">notes</a>
+        <a href="/create/">create</a>
         <a href="/store/">store</a>
       </nav>
     </header>
