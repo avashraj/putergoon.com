@@ -36,6 +36,7 @@
     }
 
     main {
+      min-width: 0;
       overflow-wrap: break-word;
     }
 
@@ -107,13 +108,18 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
+      min-width: 0;
+      width: 100%;
     }
 
     .blog-link {
+      display: inline-block;
       font-family: "Alike Angular", serif;
       color: #111;
       text-decoration: none;
       text-transform: lowercase;
+      min-width: 0;
+      max-width: 100%;
       width: fit-content;
     }
 
