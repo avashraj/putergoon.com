@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ if ne .Section "notes" }}
+  {{ if and (ne .Section "notes") (ne .Section "blogs") (ne .Section "create") (ne .Section "store") }}
     <h1>{{ .Title }}</h1>
   {{ end }}
   {{ if .Content }}
@@ -23,11 +23,11 @@
   {{ else if eq .Section "blogs" }}
     {{ $posts := where .RegularPages "Section" "blogs" }}
     {{ if gt (len $posts) 0 }}
-      <ul>
+      <div class="blogs-list">
         {{ range $posts.ByDate.Reverse }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          <a class="blog-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{ end }}
-      </ul>
+      </div>
     {{ else }}
       <p>No blog posts yet.</p>
     {{ end }}
