@@ -34,4 +34,4 @@ I'm telling you I've never read a manga like this before.
 
 ---
 
-People always be like everything was better in the past blah blah blah nostalgia bait, but right now modern shounen manga is doing pretty well. If you have reccomendations for me to read let me know at avashraj328@outlook.com
+People always be like everything was better in the past blah blah blah nostalgia bait, but right now modern shounen manga is doing pretty well. If you have recommendations for me to read let me know at avashraj328@outlook.com
